@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSV</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" lang="es-es">
+    <link href="css/global.css" rel="stylesheet" type="text/css">
+    <link href="css/edd/alert.css" rel="stylesheet" type="text/css">
+    <link href="css/edd/eddTable.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Duru+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Pompiere&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/csv.js"></script>
+    <script type="text/javascript" src="js/uploader.js"></script>
+    <script type="text/javascript" src="js/export.js"></script>
+  </head>
+  <body>
+    <div class="center">
+	<div class="title">Eduardo Jesús Díaz Dioniz<br/>alu0100789683</div>
+	<div id="drop_zone">Drop files here</div>
+	<output id="list"></output>
+	<textarea autofocus id="original"></textarea>
+	<button class="buttonTable" id="generate">Generar Tabla</button>
+	<button class="buttonTable" onClick="window.open('test/index.html','test', 'width=800,height=600');">Mostrar Mocha</button>
+	<button  class="buttonTable" onclick="tableToExcel('result', 'W3C Example Table')">Exportar</button>
+	<br>
+	
+	<div class="eddAlert" id="eddAlertError">La tabla contiene errores</div>
+	
+	<div class="output" id="finaltable"></div>
+	<script type="text/javascript" src="js/drag.js"></script>
+    </div>
+  </body>
+</html> 
